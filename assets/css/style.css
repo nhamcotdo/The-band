@@ -1,0 +1,458 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", sans-serif;
+}
+/* 
+1.từ ngoài vào trong 
+2.Từ trên xuống dưới
+3.Tổng quan -> chi tiết
+*/
+/* 
+1.Vị trí
+2.Kích thước(width, height)
+3.Màu sắc
+4.Kiểu dáng(kiểu chữ, tròn vuông,...)
+
+*/
+#main {
+}
+
+#header {
+  height: 46.5px;
+  background-color: black;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav > li > a {
+  text-transform: uppercase;
+}
+
+#nav li a {
+  color: white;
+  text-decoration: none;
+  line-height: 46.5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: inline-block;
+}
+#nav li:hover > a {
+  background-color: #ccc;
+}
+
+#nav .subnav > li:hover > a {
+  min-width: 160px;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(130, 106, 146, 0.61);
+}
+#nav .nap-arrow-down {
+  font-size: 14px;
+}
+
+#nav .subnav li a {
+  min-width: 160px;
+  color: #000;
+  line-height: 38.5px;
+}
+
+#nav li:hover ul {
+  display: block;
+}
+#header .search-btn {
+  color: #fff;
+  font-size: 14px;
+  float: right;
+  line-height: 46px;
+  padding: 0 24px;
+}
+#header .search-btn:hover {
+  background-color: #f44336 !important ;
+  cursor: pointer;
+}
+#slider {
+  background: url("/assets/img/chicago.jpg") no-repeat top center/100%;
+  padding-top: 50%;
+  margin-top: 46.5px;
+  position: relative;
+}
+#slider .text-content {
+  color: #fff;
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+  text-align: center;
+}
+
+#slider .content-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#slider .content-description {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#content {
+}
+
+#content .content-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 64px 0;
+  text-align: center;
+}
+
+#content .heading-section {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+#content .slogan-section {
+  font-size: 15px;
+  padding-top: 25px;
+  font-style: italic;
+  color: #888;
+}
+
+#content .content-text {
+  padding-top: 15px;
+  font-size: 15px;
+  text-align: justify;
+  margin: 0 16px;
+  line-height: 1.4;
+}
+
+#content .team-list {
+  padding-top: 47px;
+}
+
+#content .team-memmber {
+  width: 33.3333%;
+  float: left;
+}
+
+#content .team-memmber img {
+  width: 154px;
+}
+
+#content .team-name {
+  padding-bottom: 15px;
+}
+#content .tour-section {
+  background-color: #000;
+  padding-bottom: 64px;
+}
+#content .month-list {
+  background-color: #fff;
+  margin-top: 30px;
+  margin: 0 8px;
+}
+
+#content .month-row {
+  text-align: left;
+  border-bottom: solid 1px #ccc;
+  padding: 0 16px;
+}
+#content .month {
+  font-size: 15px;
+  line-height: 39px;
+  color: #888;
+}
+
+#content .status {
+  background-color: #f44336;
+  margin-left: 20px;
+  padding: 2px 8px;
+}
+
+#content .quantity {
+  float: right;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 9px auto;
+  padding: 0 6px;
+  line-height: 22px;
+}
+#content .place-show {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+#content .place-list {
+  left: -8px;
+  right: -8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#content .place {
+  float: left;
+  width: 33.3333%;
+  background-color: #fff;
+  text-align: left;
+  padding-bottom: 20px;
+  border-left: solid #000 8px;
+  border-right: solid #000 8px;
+}
+#content .place img {
+  width: 100%;
+}
+#content .description,
+#content .date,
+#content .buy-btn,
+#content .city {
+  margin-left: 14px;
+  font-size: 15px;
+}
+.buy-btn{
+  cursor: pointer;
+}
+#content .city {
+  font-weight: bold;
+}
+
+#content .date {
+  margin-top: 20px;
+  color: #888;
+}
+
+#content .description {
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+#content .buy-btn {
+  margin-top: 15px;
+  background-color: #000;
+  width: 110px;
+  color: #fff;
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+#content .buy-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+#content .contact {
+  max-width: 800px;
+  margin: auto;
+}
+.contact .contact-information {
+  float: left;
+  width: 50%;
+  font-size: 18px;
+}
+.contact .contact-information i {
+  font-size: 15px;
+}
+.contact .contact-information ul {
+  list-style: none;
+}
+
+.contact .phone,
+.contact .message,
+.contact .address {
+  margin-bottom: 8px;
+}
+
+.contact .input-form {
+  float: left;
+  width: 50%;
+}
+.contact .name {
+  max-width: 50%;
+  float: left;
+  padding: 0 8px 8px 8px;
+}
+.contact .name input {
+  width: 100%;
+  padding: 8px;
+}
+.contact .email-form {
+  width: 50%;
+  float: left;
+  padding: 0 8px 8px 8px;
+}
+.contact .email-form input {
+  padding: 8px;
+  width: 100%;
+}
+.contact .message-form {
+  max-width: 390px;
+  width: calc(100% - 16px);
+  margin-left: 8px;
+  padding: 8px;
+}
+.contact .send-btn {
+  font-size: 15px;
+  float: right;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 16px 8px 16px;
+}
+.contact .send-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.map {
+  background: url("/assets/img/map/map.jpg") no-repeat top center/100%;
+  padding-top: 50%;
+  margin-top: 80px;
+  filter: grayscale(50%);
+}
+#footer {
+  height: 198px;
+  text-align: center;
+  font-size: 24px;
+  color: rgb(63, 59, 59);
+  background-color: #f1f1f1;
+}
+.social-list {
+  line-height: 100%;
+  margin: auto;
+  padding-top: 64px;
+}
+
+.social {
+  display: inline-block;
+}
+.social:hover {
+  color: #ccc;
+}
+.author {
+  margin-top: 20px;
+}
+.author a {
+  cursor: pointer;
+  color: rgb(63, 59, 59);
+}
+.author a:
+.author a:visited, .author a:active {
+  color: rgb(63, 59, 59);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open{
+  display: flex;
+}
+
+.modal-container {
+  min-height: 473px;
+  background-color: #fff;
+  width: 900px;
+  position: relative;
+  margin: 16px;
+
+}
+
+.modal-header {
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.modal-header i {
+  margin-right: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  padding: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-close:hover {
+  background-color: #ccc;
+}
+
+.modal-content {
+  font-size: 15px;
+  padding: 10px;
+}
+.modal-label {
+  display: block;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+.input-modal {
+  width: 100%;
+  border: solid 1.5px #ccc;
+  padding: 8px;
+}
+
+.buy-ticket {
+  background-color: #009688;
+  padding: 16px;
+  border: none;
+  width: 100%;
+  color: #fff;
+  margin-top: 16px;
+  font-weight: 700;
+}
+.buy-ticket:hover{
+  background-color: #ccc;
+  cursor: pointer;
+}
+.modal-footer {
+  float: right;
+  margin: 33px 10px;
+}
+
+.modal-footer a {
+  color: #009688;
+}
+.clear {
+  clear: both;
+}
+.white-text {
+  color: #fff !important;
+}
